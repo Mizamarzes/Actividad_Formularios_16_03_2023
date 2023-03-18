@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <title>Maquetacion de formulario</title>
+</head>
+<body>
+    <form method="post" action="api.php">
+        <h1>FORMULARIO ÚNICO DE SEGUROS</h1>
+        <fieldset>
+            <legend>INFORMACIÓN DEL ASEGURADO TITULAR</legend>
+            <div>
+                <label>DOCUMENTO DE IDENTIDAD:</label>
+                <input type="radio" name="documento-titular" value="DNI-titular"><label>DNI</label>
+                <input type="radio" name="documento-titular" value="C.E.-titular"><label>C.E.</label>
+                <input type="radio" name="documento-titular" value="OTRO-titular"><label>OTRO(Especificar)</label>
+                <input type="text" name="numero-documento" value=""> 
+                <label>NÚMERO DE TELEFONO</label><input type="number" name="numeroTelefono-titular" value="Numero-de-telefono-titular">
+                
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label><strong>PROCEDIMIENTO DE:________</strong></label>
+                <input type="radio" name="procedimiento" value="TIPO-PROCEDIMIENTO"><label>INSCRIPCIÓN</label>
+                <input type="radio" name="procedimiento" value="TIPO-PROCEDIMIENTO"><label>BAJA POR DESAFILACIÓN</label>
+                <input type="radio" name="procedimiento" value="TIPO-PROCEDIMIENTO"><label>MODIF.DATOS(ACTUALIZACIÓN)</label>
+                <input type="radio" name="procedimiento" value="TIPO-PROCEDIMIENTO"><label>BAJA POR DESFUNCIÓN</label>
+                <br>
+                <label>(SOLO PARA DERECHOHABITANTES)</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label>APÉLLIDOS Y NOMBRES DEL DERECHOHABIENTE(Conforme a su documento de identidad)</label><br>
+                <input type="text" name="nombres-apellidos" value=""><label>.........................................................................................................................</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label>DOCUMENTO DE IDENTIDAD:</label>
+                <input type="radio" name="documento" value="DNI"><label>DNI</label>
+                <input type="radio" name="documento" value="C.E."><label>C.E.</label>
+                <input type="radio" name="documento" value="OTRO"><label>OTRO:(Especificar)</label>    
+                <input type="text" name="numero-documento" value="">      
+                <label>NÚMERO DE TELEFONO</label><input type="number" name="numeroTelefono" value="Numero-de-telefono">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>RELACIÓN CON EL TITULAR:</legend>
+            <div>
+                <input type="radio" name="relacion" value="relacion-familiar"><label>Cónyuge</label>
+                <input type="radio" name="relacion" value="relacion-familiar"><label>Concubino(a)</label>
+                <input type="radio" name="relacion" value="relacion-familiar"><label>Hijo menor de edad</label>
+                <input type="radio" name="relacion" value="relacion-familiar"><label>Hijo mayor de edad incapacitado</label>
+                <input type="radio" name="relacion" value="relacion-familiar"><label>Madre gestante de hijo extramatrimonial</label>       
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label><strong>PROCEDIMIENTO DE ADSCRIPCIÓN TEMPORAL:</strong></label><br>
+                <label>(PARA TITULARES Y DERECHOHABIENTES)</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label>Nueva dirección</label><input type="text" name="nueva-direccion" value="">.................................................................
+                <label>|      Periodo:</label><label> Desde: </label><input type="date" name="Desde-fecha" value="desde-fecha-dd-mm-aa"><br>
+                ..................................................................................................................................................<label> Hasta: </label><input type="date" name="Hasta-fecha" value="Hasta-fecha-dd-mm-aa">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label>Departamento:</label><input type="text" name="Departamento" value="">
+                <label>Provincia:</label><input type="text" name="Provincia" value="">
+                <label>Distrito:</label><input type="text" name="Distrito" value="">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label>APÉLLIDOS Y NOMBRES DEL DERECHOHABIENTE(Conforme a su documento de identidad)</label><br>
+                <input type="text" name="nombres-apellidos-otro" value=""><label>.........................................................................................................................</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label>DOCUMENTO DE IDENTIDAD:</label>
+                <input type="radio" name="documento-otro" value="DNI-2"><label>DNI</label>
+                <input type="radio" name="documento-otro" value="C.E.-2"><label>C.E.</label>
+                <input type="radio" name="documento-otro" value="OTRO-2"><label>OTRO:(Especificar)</label>     
+                <input type="text" name="numero-documento" value="">       
+                <label>NÚMERO DE TELEFONO:</label><input type="number" name="numeroTelefono-otro" value="Numero-de-telefono-otro">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>RELACIÓN CON EL TITULAR:</legend>
+            <div>
+                <input type="radio" name="relacion-otro2" value="relacion-familiar-otro2"><label>Cónyuge</label>
+                <input type="radio" name="relacion-otro2" value="relacion-familiar-otro2"><label>Concubino(a)</label>
+                <input type="radio" name="relacion-otro2" value="relacion-familiar-otro2"><label>Hijo menor de edad</label>
+                <input type="radio" name="relacion-otro2" value="relacion-familiar-otro2"><label>Hijo mayor de edad incapacitado</label>
+                <input type="radio" name="relacion-otro2" value="relacion-familiar-otro2"><label>Madre gestante de hijo extramatrimonial</label>       
+            </div>
+        </fieldset>
+        
+
+        <input type="submit" value="enviar">
+    </form>
+    
+    <pre>
+
+
+    </pre>
+
+
+
+</body>
+</html>
